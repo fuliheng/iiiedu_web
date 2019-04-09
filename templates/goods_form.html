@@ -1,0 +1,37 @@
+<h1>編輯商品</h1>
+<form action="tool.php" method="post" class="form-horizontal" role="form" enctype="multipart/form-data">
+    <div class="form-group">
+        <label class="col-md-2 control-label">商品名稱：</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" name="goods_title" id="goods_title" placeholder="請輸入商品名稱" value="">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-md-2 control-label">商品內容：</label>
+        <div class="col-md-10">
+            <textarea class="form-control" name="goods_content" id="goods_content" placeholder="請輸入商品內容"></textarea>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-md-2 control-label">商品價格：</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" name="goods_price" id="goods_price" placeholder="請輸入商品價格" value="">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-md-2 control-label"> 商品圖片：</label>
+        <div class="col-md-10">
+          <input type="file" name="goods_pic" id="goods_pic">
+        </div>
+      </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="hidden" name="op" value="insert_goods">
+            <button type="submit" class="btn btn-primary">儲存商品</button>
+        </div>
+    </div>
+</form>

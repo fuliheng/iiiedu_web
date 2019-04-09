@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <title>{$shop_name}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!--[if lt IE 9]>
+      <script src="bootstrap/js/html5shiv.min.js"></script>
+      <script src="bootstrap/js/respond.min.js"></script>
+    <![endif]-->
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/jquery-migrate.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="shop_head">
+        <a href="index.php">
+          <img src="images/001-01.png" alt="{$shop_name}" class="img-responsive">
+        </a>
+      </div>
+
+      <div id="shop_main" class="row">
+        <div class="col-md-9 col-sm-8">
+            {if $op=="goods_form"}
+              {include file="goods_form.html"}
+            {else}
+            主內容區
+            {/if}
+        </div>
+        <div class="col-md-3 col-sm-4">
+          {include file='index_side.html'}
+        </div>
+      </div>
+
+      <div id="shop_foot" >
+        <div>宜蘭縣礁溪鄉林尾路160號U219</div>
+        <div>電話：</div>
+        <div>版權所有 copyright © 2016 AISA.org. All Rights Reserved. </div>
+      </div>
+    </div>
+  </body>
+</html>

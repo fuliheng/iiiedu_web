@@ -1,0 +1,10 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">功能表</div>
+  <div class="panel-body">
+    {if isset($user_name)}
+      {include file='side_tools.html'}
+    {else}
+      {include file='side_login.html'}
+    {/if}
+   </div>
+</div>
